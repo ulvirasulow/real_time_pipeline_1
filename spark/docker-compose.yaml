@@ -1,0 +1,12 @@
+services:
+  spark:
+    image: spark:3.5.6-scala2.12-java17-python3-ubuntu
+    container_name: spark
+    command: sleep infinity
+    networks:
+      - kafka-net
+
+networks:
+  kafka-net:
+    external: true
+    name: kafka_default
