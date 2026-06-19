@@ -1,2 +1,9 @@
 # Real-time Streaming Pipeline 
-### CoinGecko API → Kafka → Spark → PostgreSQL → Grafana
+
+---
+
+## Ümumi Arxitektura
+
+```
+CoinGecko API → Kafka Producer → Kafka Broker → Spark Streaming → PostgreSQL → Grafana
+```
